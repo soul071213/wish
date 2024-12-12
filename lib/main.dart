@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:wish/pages/onboarding.dart';
 
 void main() {
   runApp(const MainApp());
@@ -9,9 +11,12 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold()
+    return ScreenUtilInit(
+      designSize: Size(393, 852),
+      builder: (context, child) =>  MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: Onboarding(),
+      ),
     );
   }
 }
