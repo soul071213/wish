@@ -17,3 +17,23 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/
+    - assets/images/
+
+  fonts:
+    - family: MinBold
+      fonts:
+        - asset: assets/fonts/MinSans-Bold.otf
+    - family: MinSemiBold
+      fonts:
+        - asset: assets/fonts/MinSans-SemiBold.otf
+    - family: MinRegular
+      fonts:
+        - asset: assets/fonts/MinSans-Regular.otf
+    - family: MinLight
+      fonts:
+        - asset: assets/fonts/MinSans-Light.otf
+    - family: MinMedium
+      fonts:
+        - asset: assets/fonts/MinSans-Medium.otf
