@@ -13,10 +13,10 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenUtilInit(
       designSize: Size(393, 852),
-      builder: (context, child) =>  MaterialApp(
+      builder: (context, child) =>  SafeArea(child: MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Onboarding(),
-      ),
+      ),)
     );
   }
 }
