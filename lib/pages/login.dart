@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:wish/App_color.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:wish/App_font.dart';
+import 'package:wish/pages/main_be.dart';
 import 'package:wish/pages/signup.dart';
 import 'package:wish/widgets/Button/text_button.dart';
 import 'package:wish/widgets/Form/insert_box.dart';
@@ -53,7 +54,17 @@ class Login extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    text_Button(text: '로그인')
+                    GestureDetector(onTap: ()=>{
+                       Navigator.push(
+                      context,
+                      PageRouteBuilder(
+                        pageBuilder: (context, animation, secondaryAnimation) => Main_be(),
+                        transitionsBuilder: (context, animation, secondaryAnimation, child) {
+                          return child;
+                        },
+                      ),
+                    ),
+                    }, child: text_Button(text: '로그인'))
                   ],
                 ),
                 SizedBox(height: 8.h,),
