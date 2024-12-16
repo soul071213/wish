@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:wish/App_color.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:wish/App_font.dart';
+import 'package:wish/pages/onboarding.dart';
 import 'package:wish/widgets/Button/text_button.dart';
 import 'package:wish/widgets/Form/insert_box.dart';
 
@@ -52,7 +53,7 @@ class Signup extends StatelessWidget {
                     onTap:() => Navigator.push(
                       context,
                       PageRouteBuilder(
-                        pageBuilder: (context, animation, secondaryAnimation) => Signup(),
+                        pageBuilder: (context, animation, secondaryAnimation) => Onboarding(),
                         transitionsBuilder: (context, animation, secondaryAnimation, child) {
                           return child;
                         },
