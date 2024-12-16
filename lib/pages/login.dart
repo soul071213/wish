@@ -32,7 +32,7 @@ class Login extends StatelessWidget {
           Expanded(child: Container(
             width: MediaQuery.of(context).size.width,
             decoration: BoxDecoration(
-              color: AppColor.yellow100,
+              color: AppColor.yellow50,
               borderRadius: const BorderRadius.only(topLeft: Radius.circular(80))
             ),
             child: Column(
@@ -65,7 +65,7 @@ class Login extends StatelessWidget {
                     GestureDetector(onTap: () => Navigator.push(
                       context,
                       PageRouteBuilder(
-                        pageBuilder: (context, animation, secondaryAnimation) => const Signup(),
+                        pageBuilder: (context, animation, secondaryAnimation) => Signup(),
                         transitionsBuilder: (context, animation, secondaryAnimation, child) {
                           return child;
                         },
