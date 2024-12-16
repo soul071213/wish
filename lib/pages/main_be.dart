@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:wish/App_color.dart';
 import 'package:wish/App_font.dart';
+import 'package:wish/pages/main_af.dart';
 import 'package:wish/widgets/Header/header.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
@@ -150,7 +151,17 @@ class _Main_beState extends State<Main_be> {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        SvgPicture.asset('assets/images/pacel.svg')
+                        GestureDetector( onTap: () {
+                          Navigator.push(
+                            context,
+                            PageRouteBuilder(
+                              pageBuilder: (context, animation, secondaryAnimation) => Main_af(),
+                              transitionsBuilder: (context, animation, secondaryAnimation, child) {
+                                return child;
+                              },
+                            ),
+                          );
+                        }, child: SvgPicture.asset('assets/images/pacel.svg'))
                       ],
                     )
               ],
