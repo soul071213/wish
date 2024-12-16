@@ -65,7 +65,7 @@ class Login extends StatelessWidget {
                     GestureDetector(onTap: () => Navigator.push(
                       context,
                       PageRouteBuilder(
-                        pageBuilder: (context, animation, secondaryAnimation) => const Signup(),
+                        pageBuilder: (context, animation, secondaryAnimation) => Signup(),
                         transitionsBuilder: (context, animation, secondaryAnimation, child) {
                           return child;
                         },
