@@ -33,7 +33,7 @@ class ListContainer extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(padding: EdgeInsets.only(left: 16.w,right: 23.w,top: 13.h),
-            child: SvgPicture.asset('assets/images/yellow_unhappy.svg'),
+            child: image==1? SvgPicture.asset('assets/images/yellow_unhappy.svg'):image==2? SvgPicture.asset('assets/images/yellow_smile.svg'):SvgPicture.asset('assets/images/yellow_soso.svg'),
           ),
           Column(
             mainAxisAlignment: MainAxisAlignment.start,
