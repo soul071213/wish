@@ -9,8 +9,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_riverpod: ^2.6.1
   flutter_screenutil: ^5.9.3
   flutter_svg: ^2.0.16
+  provider: ^6.1.2
 
 dev_dependencies:
   flutter_test:
